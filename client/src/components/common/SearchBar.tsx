@@ -1,0 +1,32 @@
+import React, { useState } from "react";
+import { AiOutlineArrowRight } from "react-icons/ai";
+
+const SearchBar: React.FC = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    setSearchQuery(value);
+    console.log("Search Query:", value);
+  };
+
+  return (
+    <div className="flex flex-col items-center justify-center py-16  bg-gray-100">
+      <h1 className="text-4xl md:text-6xl font-bold text-center mb-8">
+        How can we help?
+      </h1>
+      <div className="relative w-full max-w-lg">
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchQuery}
+          onChange={handleInputChange}
+          className="w-full pl-4 pr-12 py-2 border rounded-md shadow-sm text-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <AiOutlineArrowRight className="absolute right-4 top-1/2 transform -translate-y-1/2 text-2xl text-gray-500" />
+      </div>
+    </div>
+  );
+};
+
+export default SearchBar;
