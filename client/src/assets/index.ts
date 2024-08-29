@@ -1,15 +1,11 @@
 // assets.js
-import bin from "./images/bin.gif";
-import edit from "../assets/images/edit.gif";
-import search from "../assets/images/search.gif";
-import add from "../assets/images/add.gif";
+import whiteLogo from "./images/whiteImg.png";
+import logo from "./images/images.png";
 
 const assets = {
   images: {
-    bin,
-    edit,
-    search,
-    add,
+    whiteLogo,
+    logo,
   },
 };
 
