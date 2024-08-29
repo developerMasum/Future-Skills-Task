@@ -1,27 +1,48 @@
 # Help Center API Assignment
 
-## Instructions
+## Overview
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/iAmritMalviya/fullstack-assignment
-   cd fullstack-assignment
-   ```
+This project involves creating a Help Center API with a frontend interface for managing and displaying help center cards. The backend API allows for the creation, retrieval, and management of cards, while the frontend provides a user interface to interact with these cards.
 
-2. **Frontend:**
-   - Create a React app in the `frontend` folder.
-   - Follow the instructions in `frontend.md` to complete the frontend.
+## Live URL
 
-3. **Backend:**
-   - Create a Node.js app in the `backend` folder.
-   - Follow the `backend.md` instructions to complete the backend.
+[Assignment live site ](https://future-skills-task-rosy.vercel.app) 
+## Project Structure
 
-4. **Push Your Work:**
-   - Push both the frontend and backend apps to the same repository.
-   - Make sure the repository is public.
+- **frontend/**: Contains the React application and Redux for the frontend.
+- **backend/**: Contains the Node.js,Mongodb and Express application for the backend.
 
-5. **Submit Your Work:**
-   - Paste the GitHub repository link in the Google form you received after pushing your code.
+## Backend Setup
 
----
+### Prerequisites
 
+- Node.js
+- Express.js
+- MongoDB
+
+### Setup
+
+1. **Clone the repository:**
+ ```bash
+  git clone https://github.com/developerMasum/Future-Skills-Task
+```
+```bash
+   cd client
+npm install
+npm run dev
+```
+
+```bash
+   cd ../server
+npm install
+
+```
+```bash
+  DATABASE_URL=mongodb+srv://name of database:password@cluster0.aaflc.mongodb.net/cards?retryWrites=true&w=majority&appName=Cluster0
+PORT=5000
+
+```
+```bash
+   npm run start:dev
+
+```
