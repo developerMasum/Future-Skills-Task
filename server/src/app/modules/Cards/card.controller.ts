@@ -7,7 +7,7 @@ const createCard = catchAsync(async (req, res) => {
   const result = await CardsServices.createCard(req.body);
 
   sendResponse(res, {
-    statusCode: httpStatus.CREATED, // Use CREATED status code for creation
+    statusCode: httpStatus.CREATED,
     success: true,
     message: 'Card is created successfully',
     data: result,
@@ -27,8 +27,8 @@ const getAllCards = catchAsync(async (req, res) => {
 });
 
 const getSingleCard = catchAsync(async (req, res) => {
-  const id = req.params.id as string;
-  const result = await CardsServices.getSingleCard(id);
+  const title = req.params.title as string;
+  const result = await CardsServices.getSingleCard(title);
   console.log(result);
 
   sendResponse(res, {

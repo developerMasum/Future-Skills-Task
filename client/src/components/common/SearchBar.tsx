@@ -15,7 +15,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center py-16 bg-gray-100">
+    <div className="flex flex-col items-center justify-center py-16 bg-[#E6E6FA]">
       <h1 className="text-4xl md:text-6xl font-bold text-center mb-8">
         How can we help?
       </h1>

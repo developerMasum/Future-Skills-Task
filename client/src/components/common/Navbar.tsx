@@ -26,9 +26,16 @@ const Navbar = () => {
       <nav className="bg-slate-900 border-b shadow-sm">
         <div className="container mx-auto flex flex-wrap justify-between items-center py-4 px-4">
           <div className="flex items-center space-x-4 text-white text-sm md:text-base">
-            <img src={svg} alt="Logo" className="w-28 h-28" />
+            <img
+              src={svg}
+              alt="Logo"
+              className=" w-12 h-12 md:lg:w-28 md:lg:h-28"
+            />
             <span className="text-gray-500">|</span>
-            <a href="#" className="hover:text-gray-300 text-xl">
+            <a
+              href="#"
+              className="hover:text-gray-300 text-[10px] md:lg:text-xl"
+            >
               Help Center
             </a>
           </div>

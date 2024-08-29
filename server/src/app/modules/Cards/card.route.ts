@@ -7,6 +7,6 @@ const router = express.Router();
 router.post('/', CardsController.createCard);
 
 router.get('/', CardsController.getAllCards);
-router.get('/:id', CardsController.getSingleCard);
+router.get('/:title', CardsController.getSingleCard);
 
 export const CardRoutes = router;

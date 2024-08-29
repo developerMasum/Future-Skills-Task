@@ -10,14 +10,14 @@ const createCard = async (payload: TCard) => {
 
 const getAllCards = async (req: Request) => {
   const { title } = req.query as { title?: string };
-  const query = title ? { title } : {}; // Modify the query if title is present
+  const query = title ? { title } : {};
 
   const cards = await Card.find(query);
   return cards;
 };
 
-const getSingleCard = async (id: string) => {
-  const result = await Card.findById(id);
+const getSingleCard = async (title: string) => {
+  const result = await Card.findOne({ title });
   return result;
 };
 
