@@ -20,7 +20,6 @@ const cardSchema = new Schema<TCard>(
     },
     link: {
       type: String,
-      required: true,
     },
   },
   {
