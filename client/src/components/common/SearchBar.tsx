@@ -1,17 +1,21 @@
 import React, { useState } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-const SearchBar: React.FC = () => {
+interface SearchBarProps {
+  onSearch: (query: string) => void;
+}
+
+const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     setSearchQuery(value);
-    console.log("Search Query:", value);
+    onSearch(value);
   };
 
   return (
-    <div className="flex flex-col items-center justify-center py-16  bg-gray-100">
+    <div className="flex flex-col items-center justify-center py-16 bg-gray-100">
       <h1 className="text-4xl md:text-6xl font-bold text-center mb-8">
         How can we help?
       </h1>

@@ -1,6 +1,6 @@
-export type TPost = {
+export type TCard = {
   _id: string;
-  tittle: string;
+  title: string;
   description: string;
   link: string;
 };
@@ -8,7 +8,7 @@ export type TPost = {
 export interface IPostResponse {
   users: {
     data: {
-      result: TPost[];
+      result: TCard[];
     };
   };
 }

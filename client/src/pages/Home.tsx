@@ -1,11 +1,9 @@
-import Cards from "@/components/common/Cards";
-import SearchBar from "@/components/common/SearchBar";
+import AllCards from "@/components/common/AllCards";
 
 const HomePage = () => {
   return (
     <div>
-      <SearchBar />
-      <Cards />
+      <AllCards />
     </div>
   );
 };

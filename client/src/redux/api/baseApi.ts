@@ -4,7 +4,7 @@ import { tagTypesList } from "../tag-types";
 export const baseApi = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:5000/api/users",
+    baseUrl: "http://localhost:5000/cards",
   }),
   endpoints: () => ({}),
   tagTypes: tagTypesList,
